@@ -1,0 +1,18 @@
+{
+  "name": "www-robotics-club-pulchowk",
+  "version": "1.0.0",
+  "description": "Website for Robotics Club, Pulchowk Campus",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve",
+    "start": "npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
