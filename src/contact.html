@@ -1,0 +1,116 @@
+---
+title: Contact
+layout: base.njk
+---
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <p class="title">Contact Us</p>
+  </div>
+</section>
+
+<div class="container">
+  <form action="https://api.staticforms.xyz/submit" method="post">
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Name</label>
+      </div>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Email</label>
+      </div>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Subject</label>
+      </div>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Message</label>
+      </div>
+      <div class="field-body">
+        <div class="field is-narrow">
+          <div class="control">
+            <textarea
+              class="textarea"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type="text" name="honeypot" style="display: none" />
+    <input
+      type="hidden"
+      name="accessKey"
+      value="719c5f5a-ae6d-41c7-a230-fc8da3b7af41"
+    />
+    <input
+      type="hidden"
+      name="subject"
+      value="Message from robotics.pcampus.edu.np"
+    />
+    <input type="hidden" name="replyTo" value="@" />
+    <input type="hidden" name="redirectTo" value="/contact" />
+
+    <div class="field is-horizontal">
+      <div class="field-label">
+        <!-- Left empty for spacing -->
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input type="submit" class="button is-primary" value="Submit" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
