@@ -4,15 +4,23 @@
   "description": "Website for Robotics Club, Pulchowk Campus",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --serve",
+    "css-build": "node-sass --omit-source-map-url src/sass/bulma.scss src/css/bulma.css",
+    "css-watch": "npm run css-build -- --watch",
+    "11ty-build": "npx @11ty/eleventy",
+    "11ty-start": "npx @11ty/eleventy --serve",
+    "build": "npm run css-build; npm run 11ty-build",
+    "dev": "npm-run-all --parallel css-watch 11ty-start",
     "start": "npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -r _site",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^1.0.1",
+    "bulma": "^0.9.4",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5"
   }
 }

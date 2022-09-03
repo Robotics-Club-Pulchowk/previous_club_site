@@ -1,0 +1,9 @@
+@import "https://cdn.jsdelivr.net/npm/bulma-timeline@3.0.5/dist/css/bulma-timeline.min.css";
+
+.timeline-content {
+  transition: all 0.2s ease-in-out;
+}
+
+.timeline-content:hover {
+  transform: scale(1.05);
+}

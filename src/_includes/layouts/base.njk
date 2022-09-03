@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>{{ title }} | Robotics Club, Pulchowk Campus</title>
     <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/bulma.css"/>
+    {% if css %}
+      <link rel="stylesheet" href="/css/{{ css }}"/>
+    {% endif %}
   </head>
-  <body>
+  <body
+    class="has-navbar-fixed-top">
     {# Navbar #}
     {% block nav %}
       {% include "../components/navbar.njk" %}
@@ -19,7 +24,9 @@
       {% block footer %}
     {% include "../components/footer.njk" %}
   {% endblock %}
-  </body>
-    <script type="text/javascript" src="/js/main.js"> </script>
-    <script type="text/javascript" src="/js/navbar.js"> </script>
-</html>
+  </body><script type="text/javascript" src="/js/main.js"> </script>
+  <script type="text/javascript" src="/js/navbar.js"></script>
+  {% if js %}
+    <script type="text/javascript" src="/js/{{ js }}"></script>
+  {% endif %}
+</html></head></html>

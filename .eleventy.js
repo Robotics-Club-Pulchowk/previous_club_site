@@ -1,15 +1,14 @@
 module.exports = function (eleventyConfig) {
   // assets we want to passthrough
-
-  eleventyConfig.addPassthroughCopy("./src/css");
-  eleventyConfig.addPassthroughCopy("./src/js");
-  eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy({ "src/css": "css" });
+  eleventyConfig.addPassthroughCopy({ "src/js": "js" });
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
   return {
     dir: {
-      input: "src",
-      layouts: "_includes/layouts",
-      pathPrefix: "/www/"
+      input: "src/pages",
+      layouts: "../_includes/layouts",
+      pathPrefix: "/www/",
     },
   };
 };

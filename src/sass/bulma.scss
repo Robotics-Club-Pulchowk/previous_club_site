@@ -1,0 +1,6 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+$family-sans-serif: "Noto Sans", sans-serif;
+$family-primary: $family-sans-serif;
+
+@import "../../node_modules/bulma/bulma.sass";
