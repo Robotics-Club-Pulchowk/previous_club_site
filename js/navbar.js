@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  let logo = document.getElementById("club-logo");
+  logo.classList.add("is-hidden");
+
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll(".navbar-burger"),
@@ -17,4 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
       $target.classList.toggle("is-active");
     });
   });
+});
+
+document.addEventListener("scroll", () => {
+  let logo = document.getElementById("club-logo");
+  if (location.pathname === "/") {
+    if (window.scrollY < 100) {
+      logo.classList.add("is-hidden");
+    } else {
+      logo.classList.remove("is-hidden");
+    }
+  }
 });

@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Contact | Robotics Club, Pulchowk Campus</title>
     <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/bulma.css"/>
+    
   </head>
-  <body>
+  <body
+    class="has-navbar-fixed-top">
     
     
-      <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item " href="/">
-      <img src="/assets/robotics_club_logo.svg" width="112" height="36">
+      <img id="club-logo" src="/assets/robotics_club_logo-white.png">
     </a>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
       <span aria-hidden="true"></span>
@@ -53,6 +56,9 @@
       <a class="navbar-item" href="/alumni">
         Alumni
       </a>
+      <a class="navbar-item" href="/about">
+        About
+      </a>
       <a class="navbar-item" href="/contact">
         Contact Us
       </a>
@@ -69,111 +75,125 @@
   </div>
 </section>
 
-<div class="container">
-  <form action="https://api.staticforms.xyz/submit" method="post">
-    <div class="field is-horizontal">
-      <div class="field-label is-normal">
-        <label class="label">Name</label>
-      </div>
-      <div class="field-body">
-        <div class="field is-narrow">
-          <div class="control">
-            <input
-              class="input"
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
+<section class="section">
+  <div class="container">
+    <form action="https://api.staticforms.xyz/submit" method="post">
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Name</label>
+        </div>
+        <div class="field-body">
+          <div class="field is-narrow">
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="field is-horizontal">
-      <div class="field-label is-normal">
-        <label class="label">Email</label>
-      </div>
-      <div class="field-body">
-        <div class="field is-narrow">
-          <div class="control">
-            <input
-              class="input"
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Email</label>
+        </div>
+        <div class="field-body">
+          <div class="field is-narrow">
+            <div class="control">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="field is-horizontal">
-      <div class="field-label is-normal">
-        <label class="label">Subject</label>
-      </div>
-      <div class="field-body">
-        <div class="field is-narrow">
-          <div class="control">
-            <input
-              class="input"
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              required
-            />
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Subject</label>
+        </div>
+        <div class="field-body">
+          <div class="field is-narrow">
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="field is-horizontal">
-      <div class="field-label is-normal">
-        <label class="label">Message</label>
-      </div>
-      <div class="field-body">
-        <div class="field is-narrow">
-          <div class="control">
-            <textarea
-              class="textarea"
-              name="message"
-              placeholder="Your Message"
-              required
-            ></textarea>
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Message</label>
+        </div>
+        <div class="field-body">
+          <div class="field is-narrow">
+            <div class="control">
+              <textarea
+                class="textarea"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <input type="text" name="honeypot" style="display: none" />
-    <input
-      type="hidden"
-      name="accessKey"
-      value="719c5f5a-ae6d-41c7-a230-fc8da3b7af41"
-    />
-    <input
-      type="hidden"
-      name="subject"
-      value="Message from robotics.pcampus.edu.np"
-    />
-    <input type="hidden" name="replyTo" value="@" />
-    <input type="hidden" name="redirectTo" value="/contact" />
+      <input type="text" name="honeypot" style="display: none" />
+      <input
+        type="hidden"
+        name="accessKey"
+        value="719c5f5a-ae6d-41c7-a230-fc8da3b7af41"
+      />
+      <input
+        type="hidden"
+        name="subject"
+        value="Message from robotics.pcampus.edu.np"
+      />
+      <input type="hidden" name="replyTo" value="@" />
+      <input type="hidden" name="redirectTo" value="/contact" />
 
-    <div class="field is-horizontal">
-      <div class="field-label">
-        <!-- Left empty for spacing -->
-      </div>
-      <div class="field-body">
-        <div class="field">
-          <div class="control">
-            <input type="submit" class="button is-primary" value="Submit" />
+      <div class="field is-horizontal">
+        <div class="field-label">
+          <!-- Left empty for spacing -->
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <input type="submit" class="button is-primary" value="Submit" />
+            </div>
           </div>
         </div>
       </div>
+    </form>
+  </div>
+
+  <div id="submit-success" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <p>Success</p>
+        We received your message. Thank You!
+      </div>
     </div>
-  </form>
-</div>
+
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+</section>
 
     
     
@@ -186,7 +206,9 @@
   </div>
 </footer>
   
-  </body>
-    <script type="text/javascript" src="/js/main.js"> </script>
-    <script type="text/javascript" src="/js/navbar.js"> </script>
-</html>
+  </body><script type="text/javascript" src="/js/main.js"> </script>
+  <script type="text/javascript" src="/js/navbar.js"></script>
+  
+    <script type="text/javascript" src="/js/contact.js"></script>
+  
+</html></head></html>
